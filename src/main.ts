@@ -13,7 +13,6 @@ interface SimpleComment {
 };
 
 const params = process.argv;
-console.log(params);
 
 // node main.js <param> <param> <param>
 if (params.length < 5) {
@@ -57,7 +56,8 @@ if (params.length < 5) {
                 names.splice(randomIndex, 1);
             }
 
-            console.log("The winners are:", winners);
+            console.log("The winners are:");
+            winners.forEach(winner => console.log("  @" + winner));
         });
 
 }
