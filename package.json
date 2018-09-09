@@ -1,0 +1,19 @@
+{
+  "name": "insta-winner",
+  "version": "1.0.0",
+  "description": "Select winners from comments.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "dev": "tsc -w"
+  },
+  "author": "Paul Smith <code@uvwxy.de>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.1.2",
+    "typescript": "^3.0.3"
+  }
+}
