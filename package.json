@@ -10,6 +10,7 @@
   "author": "Paul Smith <code@uvwxy.de>",
   "license": "GPL-3.0",
   "dependencies": {
+    "hash.js": "^1.1.7",
     "node-fetch": "^2.2.0"
   },
   "devDependencies": {
