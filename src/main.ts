@@ -154,7 +154,7 @@ if (params.length < 5) {
 
             console.log(numWinners == 1 ? "The winner is:" : "The winners are:");
             setTimeout(() => {
-                winners.forEach(winner => console.log("  @" + winner));
+                winners.forEach(winner => console.log("  @" + winner + "    URL: https://instagram.com/" + winner));
             }, 2000);
 
         }, 2000);
@@ -195,43 +195,5 @@ if (params.length < 5) {
                     }
                 });
         });
-
-
-    //         // fetch()
-    //         //     .then(resp => resp.ok ? resp.text() : "err")
-    //         //     .then(console.log);
-
-
-    // getPostPage(postId)
-    //     .then((text: string) => {
-
-    //         console.log(text.length);
-
-    //         const queryParams = {
-    //             shortcode: "B3-IcuPI_2Q",
-    //             child_comment_count: 0,
-    //             fetch_comment_count: 500,
-    //             parent_comment_count: 0,
-    //             has_threaded_comments: true
-    //         };
-
-    //         const queryParams2 = {
-    //             shortcode: "B3-IcuPI_2Q",
-    //             child_comment_count: 3,
-    //             fetch_comment_count: 40,
-    //             parent_comment_count: 24,
-    //             has_threaded_comments: true
-    //         };
-    //         const queryParamsJson = JSON.stringify(queryParams2);
-    //         const query_hash = "870ea3e846839a3b6a8cd9cd7e42290c"; // hash.sha256().update(queryParamsJson).digest('hex');
-
-
-    //         // fetch("https://www.instagram.com/graphql/query/?query_hash=" + query_hash + "&variables=" + encodeURI(queryParamsJson))
-    //         //     .then(resp => resp.ok ? resp.text() : "err")
-    //         //     .then(console.log);
-
-    //         return;
-
-    //     });
 
 }
