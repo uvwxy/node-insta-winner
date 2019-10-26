@@ -12,12 +12,12 @@ npm run compile
 ## General usage
 
 ```
-node bin/main.js <url> <numWinners> <regex>
+node bin/main.js <url> <numWinners> <regex1> <regex2>
 ```
 
 ## Example
-The following selects one winner that has tagged two friends:
+The following selects one winner that has tagged three friends and has mentioned `me luck`:
 
 ```
-node bin/main.js "https://www.instagram.com/p/BnY_L4IAI_1/?taken-by=pauls_3d_things" 1 ".*@.+@.+"
+node bin/main.js "B3-IcuPI_2Q" 1 ".*@.+@.+@.+.*" ".*me luck.*"
 ```
